@@ -13,4 +13,4 @@ trimPathOffset is used to make path translate from 0 to 1</br>
 trimPathStart means cut the line from start</br>
 trimPathEnd means cut the line from end</br>
 </br>
-Practically you only need files vd_line.xml and avd_line.xml in drawables to make it work. The rest of the code is just sample.
+Practically you only need files vd_line.xml and avd_line.xml in drawables to make it work. Set avd_line as background to any view and boom! You have your progress bar. 
