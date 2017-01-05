@@ -1,7 +1,6 @@
 # UberStyledProgressBarAndroid
 
-
-![uber_3](https://cloud.githubusercontent.com/assets/6247940/21674472/e52db6ea-d353-11e6-89ea-8e4137f2b1ce.gif)
+![uber_11](https://cloud.githubusercontent.com/assets/6247940/21677083/8cbe5be4-d35e-11e6-9118-97247567f6f9.gif)
 
 
 A very simple Progress bar done with the almighty <a href="https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable.html">Animated Vector Drawable</a>.</br><br>
