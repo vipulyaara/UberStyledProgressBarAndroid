@@ -17,6 +17,44 @@ Practically you only need files vd_line.xml and avd_line.xml in drawables to mak
 
 </br>
 </br>
+**Repeating the animation infinitely**
+</br>
+To repeat the animation infinitely after Lollipop (v21)
+
+```
+        final AnimatedVectorDrawable avd = (AnimatedVectorDrawable) ivNoTrip.getDrawable();
+        avd.registerAnimationCallback(new Animatable2.AnimationCallback() {
+            @Override
+            public void onAnimationEnd(Drawable drawable) {
+                avd.start();
+            }
+        });
+```
+
+
+But this approach does not work with AnimatedVectorDrawableCompat. So for backward compatibility, use this workaround
+
+```
+Runnable action = new Runnable() {
+        @Override
+        public void run() {
+            repeatAnimation();
+        }
+    };
+
+    private void initializeAvd() {
+        avdProgress = AnimatedVectorDrawableCompat.create(context, R.drawable.avd_line);
+        repeatAnimation();
+    }
+
+    private void repeatAnimation() {
+        avdProgress.start();
+        ivProgress.postDelayed(action, 1000); // Will repeat animation in every 1 second
+    }
+```
+
+</br>
+</br>
 </br>
 
 # **License**
