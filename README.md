@@ -16,8 +16,8 @@ Practically you only need files vd_line.xml and avd_line.xml in drawables to mak
 
 
 </br>
-</br>
 **Repeating the animation infinitely**
+</br>
 </br>
 To repeat the animation infinitely after Lollipop (v21)
 
