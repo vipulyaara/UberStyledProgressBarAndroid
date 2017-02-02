@@ -44,6 +44,8 @@ Runnable action = new Runnable() {
 
     private void initializeAvd() {
         avdProgress = AnimatedVectorDrawableCompat.create(context, R.drawable.avd_line);
+        ivProgress = (ImageView) findViewById(R.id.iv_progress);
+        ivProgress.setBackground(avdProgress);
         repeatAnimation();
     }
 
